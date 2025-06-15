@@ -34,7 +34,7 @@ class Archer(Heroes):
     def attack(self):
         if self.arrows > 30:
             self.arrows -= 1
-            hit = self.precision > 10
+            hit = self.precision > 50
 
             if hit:
                 print("hit successfully")

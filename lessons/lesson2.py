@@ -11,11 +11,12 @@ class Hero:
         print(f"{self.name} action")
 
 class WarriorHero(Hero):
-    def __init__(self, st):
+    def __init__(self, name, lvl, hp, st):
+        super().__init__(name, lvl, hp)
         self.st = st
 
     def action(self):
         print("method warrior")
 
-hero_1 = WarriorHero("wally", 21,200,2)
+hero_1 = WarriorHero("wally", 21, 200, 2)
 print(hero_1.action())
